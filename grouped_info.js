@@ -44,6 +44,4 @@ const results = games.map((game, index) => {
     }
 })
 
-console.log(games[1]);
-
 fs.writeFileSync("report1-grouped_information.json", JSON.stringify({ results }));
