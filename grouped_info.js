@@ -6,7 +6,7 @@ const games = log.split("InitGame: ")
                         .map(game => game.split("\n")
                         .filter(line => !line.includes("------------------------------------------------------------")))
 
-games.shift()
+games.shift();
 
 const results = games.map((game, index) => {
     let totalKills = 0;
@@ -42,6 +42,6 @@ const results = games.map((game, index) => {
             kills
         }
     }
-})
+});
 
 fs.writeFileSync("report1-grouped_information.json", JSON.stringify({ results }, null, 2));
