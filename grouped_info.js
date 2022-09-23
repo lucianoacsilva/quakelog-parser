@@ -44,4 +44,4 @@ const results = games.map((game, index) => {
     }
 })
 
-fs.writeFileSync("report1-grouped_information.json", JSON.stringify({ results }));
+fs.writeFileSync("report1-grouped_information.json", JSON.stringify({ results }, null, 2));

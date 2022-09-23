@@ -27,4 +27,4 @@ const results = games.map((game, index) => {
     }
 })
 
-fs.writeFileSync("report2-grouped_kills_by_means.json", JSON.stringify({ results }));
+fs.writeFileSync("report2-grouped_kills_by_means.json", JSON.stringify({ results }, null, 2));
